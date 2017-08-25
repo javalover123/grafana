@@ -363,7 +363,7 @@ function($, _) {
 
   // Dimensionless Units
   kbn.valueFormats.none  = kbn.toFixed;
-  kbn.valueFormats.short = kbn.formatBuilders.scaledUnits(1000, ['', ' K', ' Mil', ' Bil', ' Tri', ' Quadr', ' Quint', ' Sext', ' Sept']);
+  kbn.valueFormats.short = kbn.formatBuilders.scaledUnits(10000, ['', ' 万', ' 亿', ' 万亿', ' 亿亿']);
   kbn.valueFormats.dB    = kbn.formatBuilders.fixedUnit('dB');
   kbn.valueFormats.ppm   = kbn.formatBuilders.fixedUnit('ppm');
 
